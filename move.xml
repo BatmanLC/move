@@ -19,20 +19,38 @@
                 <next>
                   <block type="movement_left" id="76">
                     <next>
-                      <block type="movement_reverse" id="55">
+                      <block type="robot_delay" id="116" inline="true">
+                        <value name="DELAY">
+                          <block type="math_number" id="125">
+                            <field name="NUM">3000</field>
+                          </block>
+                        </value>
                         <next>
-                          <block type="movement_forward" id="10">
+                          <block type="movement_reverse" id="55">
                             <next>
-                              <block type="robot_delay" id="18" inline="true">
+                              <block type="robot_delay" id="118" inline="true">
                                 <value name="DELAY">
-                                  <block type="math_number" id="34">
-                                    <field name="NUM">5000</field>
+                                  <block type="math_number" id="133">
+                                    <field name="NUM">3000</field>
                                   </block>
                                 </value>
                                 <next>
-                                  <block type="movement_stutter" id="66">
+                                  <block type="movement_forward" id="10">
                                     <next>
-                                      <block type="movement_stop" id="45"></block>
+                                      <block type="robot_delay" id="18" inline="true">
+                                        <value name="DELAY">
+                                          <block type="math_number" id="34">
+                                            <field name="NUM">5000</field>
+                                          </block>
+                                        </value>
+                                        <next>
+                                          <block type="movement_stutter" id="66">
+                                            <next>
+                                              <block type="movement_stop" id="45"></block>
+                                            </next>
+                                          </block>
+                                        </next>
+                                      </block>
                                     </next>
                                   </block>
                                 </next>
