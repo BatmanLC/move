@@ -13,32 +13,32 @@
           </block>
         </value>
         <next>
-          <block type="robot_delay" id="332" inline="true">
-            <value name="DELAY">
-              <block type="math_number" id="339">
-                <field name="NUM">500</field>
-              </block>
-            </value>
+          <block type="oled_drawtext" id="242">
+            <field name="TEXT">i love pizza</field>
             <next>
-              <block type="oled_cleardisplay" id="330">
+              <block type="robot_delay" id="332" inline="true">
+                <value name="DELAY">
+                  <block type="math_number" id="339">
+                    <field name="NUM">500</field>
+                  </block>
+                </value>
                 <next>
-                  <block type="oled_setcursor" id="275" inline="true">
-                    <value name="STARTX">
-                      <block type="math_number" id="282">
-                        <field name="NUM">11</field>
-                      </block>
-                    </value>
-                    <value name="STARTY">
-                      <block type="math_number" id="312">
-                        <field name="NUM">11</field>
-                      </block>
-                    </value>
+                  <block type="oled_cleardisplay" id="330">
                     <next>
-                      <block type="oled_drawtext" id="321">
-                        <field name="TEXT">And Tacos!</field>
+                      <block type="oled_setcursor" id="275" inline="true">
+                        <value name="STARTX">
+                          <block type="math_number" id="282">
+                            <field name="NUM">11</field>
+                          </block>
+                        </value>
+                        <value name="STARTY">
+                          <block type="math_number" id="312">
+                            <field name="NUM">11</field>
+                          </block>
+                        </value>
                         <next>
-                          <block type="oled_drawtext" id="242">
-                            <field name="TEXT">i love pizza</field>
+                          <block type="oled_drawtext" id="321">
+                            <field name="TEXT">And Tacos!</field>
                           </block>
                         </next>
                       </block>
